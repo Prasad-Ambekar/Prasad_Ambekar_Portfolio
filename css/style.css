@@ -41,7 +41,7 @@ body  {
 
 @media screen and (max-width: 600px) {
 .card_inside {
-   font-size: 12px;
+   font-size: 13px;
 }
 }
 .card_inside::before {
@@ -69,8 +69,8 @@ body  {
 @media screen and (max-width: 800px) {
   .CardExternal {   
    margin-top: 10px;
-   margin-left: 10px;
-   margin-right: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
     padding: 5;
   }
 }
@@ -166,6 +166,16 @@ body  {
     margin-bottom: 20px;
   }
 }
+
+@media screen and (max-width: 800px) {
+.CardCertificate {
+   margin-top: 20px;
+   padding: 20px;
+   opacity: .9;
+   height: 450px;
+}
+}
+ 
  
 .credential{
   color: blue;
