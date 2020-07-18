@@ -204,7 +204,7 @@ div.topnav a:hover:after
   height: 1vmin;
   left: 30%;
   position: absolute;
-  top: 75%;
+  top: 80%;
   transform: translate(-50%, -50%);
   width: 55vmin;
 }
