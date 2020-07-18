@@ -16,7 +16,7 @@
   height: 50vmin;
   left: 30%;
   position: absolute;
-  top: 60%;
+  top: 70%;
   transform: translate(-50%, -50%);
   width: 55vmin;
 }
@@ -191,15 +191,31 @@ div.topnav a:hover:after
   height: 10vmin;
   left: 30%;
   position: absolute;
-  top: 75%;
+  top: 84%;
   transform: translate(-50%, -50%);
   width: 55vmin;
 }
 
+
+@media screen and (max-width: 600px) {
+.account {
+  padding: 10px 40px;
+  color: white;
+  height: 1vmin;
+  left: 30%;
+  position: absolute;
+  top: 75%;
+  transform: translate(-50%, -50%);
+  width: 55vmin;
+}
+}
+
+
 .fa {
-  padding: 1em;
-  font-size: 50em;
-  width: 3em;
+    padding: 7px 3px;
+  font-size: 10em;
+  width: 2em;
+  height: 2em;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
