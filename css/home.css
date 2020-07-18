@@ -92,7 +92,7 @@ body, html{
   overflow: hidden;
   background-color: transperents;
   margin: 0 auto;
-  padding: 2em 5em;
+  padding: 3em 1em;
   text-align:left;
 
 }
@@ -165,6 +165,7 @@ div.topnav a:hover:after
     display: none;
   }
   .topnav a.icon {
+  padding: 1em 1em;
     float: right;
     display: block;
   }
@@ -173,6 +174,7 @@ div.topnav a:hover:after
 @media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
+  padding: 1em 1em;
     position: absolute;
     right: 0;
     top: 0;
@@ -180,7 +182,7 @@ div.topnav a:hover:after
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: right;
+    text-align: left;
     text-align: bottom;
   }
 }
@@ -212,7 +214,7 @@ div.topnav a:hover:after
 
 
 .fa {
-    padding: 7px 3px;
+  padding: 7px 3px;
   font-size: 10em;
   width: 2em;
   height: 2em;
@@ -220,26 +222,14 @@ div.topnav a:hover:after
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  background: #808B96;
+  color: white;
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
 
 
 footer {
@@ -251,6 +241,46 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+.spinner-wrapper {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #566573;
+z-index: 999999;
 }
 
 @keyframes fadeInAnimation { 
