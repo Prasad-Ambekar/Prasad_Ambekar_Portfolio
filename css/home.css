@@ -2,63 +2,49 @@
 @import 'https://fonts.googleapis.com/css?family=Raleway';
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }
-  40%, 60% { transform: translate3d(0, 50%, 0); }
   100% { transform: translate3d(0, 0, 0); }
 }
-@keyframes showBottomText {
-  0% { transform: translate3d(0, -100%, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
-.animated-title {
-  padding: 10px 40px;
-  color: white;
-  font-family: Roboto, Arial, sans-serif;
-  height: 50vmin;
-  left: 30%;
-  position: absolute;
-  top: 70%;
-  transform: translate(-50%, -50%);
-  width: 55vmin;
-}
-.animated-title > div {
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-}
-.animated-title > div div {
-  font-size: 7vmin;
-  padding: 2vmin 0;
-  position: absolute;
-  text-shadow: 4px 4px 8px #000000 ;
-}
-.animated-title > div div span {
-  display: block;
-}
-.animated-title > div.text-top {
-  border-bottom: 1vmin solid black;
-  top: 0;
-}
-.animated-title > div.text-top div {
+
+.loce {
   animation: showTopText 1s;
-  animation-delay: 0.5s;
   animation-fill-mode: forwards;
-  bottom: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 9%;
+  height: 55vmin;
   transform: translate(0, 100%);
 }
-.animated-title > div.text-top div span:first-child {
-  color: white;
-  text-shadow: 2px 2px 4px #000000;
+
+@media screen and (max-width: 1200px) {
+.loce {
+  margin-top: 14%;
+
 }
-.animated-title > div.text-bottom {
-  bottom: 0;
 }
-.animated-title > div.text-bottom div {
-  animation: showBottomText 0.5s;
-  animation-delay: 1.75s;
-  animation-fill-mode: forwards;
-  top: 0;
-  transform: translate(0, -100%);
+@media screen and (max-width: 1000px) {
+.loce {
+  margin-top: 20%;
+
+}
+}
+@media screen and (max-width: 800px) {
+.loce {
+  margin-top: 30%;
+
+}
+}
+@media screen and (max-width: 600px) {
+.loce {
+  margin-top: 40%;
+
+}
+}
+@media screen and (max-width: 400px) {
+.loce {
+  margin-top: 50%;
+
+}
 }
 
 body, html{
@@ -222,7 +208,7 @@ div.topnav a:hover:after
 
 @media screen and (max-width: 800px) {
 .logo-img{
-  height: 8vw;
+  height: 9vw;
   text-align: center;
 }
 }
@@ -247,7 +233,7 @@ div.topnav a:hover:after
 
 
 footer {
-  background-image: url("images/footer.JPEG");
+  background-image: url("images/Bg.JPG");
   color: white;
   text-align: center;
   display: block;
