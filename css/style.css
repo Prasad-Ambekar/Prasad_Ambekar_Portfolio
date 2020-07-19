@@ -22,11 +22,19 @@ body  {
 .CardResume {
    background-color: white;
    padding:20px;
-   font-size: 21px;
 }
 
 .CardResume h2{
   color: #1C2833;
+}
+
+@media screen and (max-width: 800px) {
+  .CardResume {   
+   margin-top: 10px;
+   margin-left: 20px;
+   margin-right: 20px;
+    padding: 15px;
+  }
 }
 
 .card_inside {
@@ -39,7 +47,7 @@ body  {
    position: relative;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 .card_inside {
    font-size: 13px;
 }
@@ -64,6 +72,9 @@ body  {
    opacity: .9;
 }
  
+.CardExternal h1{
+   font-size: 2vw;
+}
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
@@ -71,8 +82,11 @@ body  {
    margin-top: 10px;
    margin-left: 20px;
    margin-right: 20px;
-    padding: 5;
+    padding: 15px;
   }
+.CardExternal h1{
+   font-size: 6vw;
+}
 }
 
 
@@ -112,15 +126,6 @@ body  {
 .fas {
   font-size:36px;
 } 
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-  top: 100%;
-}
 
 
 /*___________________________________________________________________________*/
@@ -211,6 +216,11 @@ body  {
    margin-bottom: 20%;
    opacity: .9;
 }
+
+.ExternalCardContact h1{
+   font-size: 2vw;
+}
+
 .CardContact:hover {
   -ms-transform: scale(1.02); /* IE 9 */
   -webkit-transform: scale(1.02); /* Safari 3-8 */
@@ -223,8 +233,11 @@ body  {
    margin-top: 10px;
    margin-left: 20px;
    margin-right: 20px;
-    padding: 5;
+    padding: 15px;
   }
+.ExternalCardContact h1{
+   font-size: 5vw;
+}
 }
 
 .fab {

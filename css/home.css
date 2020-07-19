@@ -215,6 +215,17 @@ div.topnav a:hover:after
 }
 }
 
+.logo-img{
+  height: 3vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+.logo-img{
+  height: 8vw;
+  text-align: center;
+}
+}
 
 .fa {
   padding: 7px 3px;
@@ -237,14 +248,22 @@ div.topnav a:hover:after
 
 footer {
   background-image: url("images/footer.JPEG");
+  color: white;
   text-align: center;
   display: block;
-  padding: 20px;
+  padding: 7px;
   text-shadow: 1px 1px 2px #626567;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (max-width: 800px) {
+footer {
+  padding: 5px;
+  }
+}
+
 
 
 @keyframes fadeInAnimation { 
