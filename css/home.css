@@ -14,16 +14,37 @@
   margin-top: 10%;
   margin-bottom: 20%;
   height: 55vmin;
-  transform: translate(0, 100%);
+  transform: translate(0, 100%)
+}
+
+@media screen and (max-width: 1000px) {
+.loce {
+  margin-bottom: 40%;
+
+}
 }
 
 @media screen and (max-width: 800px) {
 .loce {
-  margin-top: 10px;
-  margin-bottom: 30%;
+  margin-bottom: 60%;
+
 }
 }
 
+@media screen and (max-width: 600px) {
+.loce {
+  margin-bottom: 80%;
+
+}
+}
+
+@media screen and (max-width: 400px) {
+.loce {
+    margin-top: 20%;
+  margin-bottom: 80%;
+
+}
+}
 
 body, html{
   height: 100%;
