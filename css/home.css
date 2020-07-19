@@ -12,7 +12,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 20%;
   height: 55vmin;
   transform: translate(0, 100%);
 }
@@ -20,6 +20,7 @@
 @media screen and (max-width: 800px) {
 .loce {
   margin-top: 10px;
+  margin-bottom: 30%;
 }
 }
 
