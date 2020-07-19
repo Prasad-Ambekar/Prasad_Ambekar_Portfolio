@@ -30,16 +30,11 @@
 }
 @media screen and (max-width: 800px) {
 .loce {
-  margin-top: 30%;
+  margin-top: 25%;
 
 }
 }
-@media screen and (max-width: 600px) {
-.loce {
-  margin-top: 35%;
 
-}
-}
 
 
 body, html{
