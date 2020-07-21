@@ -211,7 +211,7 @@ div.topnav a:hover:after
 
 .credits {
   position: fixed;
-
+  opacity: 0.25;
   bottom: 0;
   padding: 15px;
   text-align: right;
