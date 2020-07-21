@@ -68,8 +68,9 @@ body  {
    padding: 50px;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 20px;
+   margin-bottom: 30px;
    width: 1140px;
+   z-index: 999;
    opacity: .9;
 }
  
@@ -97,7 +98,13 @@ body  {
 }
 @media screen and (max-width: 576px){
 .CardExternal {
-    width: 500px;
+    width: 370px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 375px){
+.CardExternal {
+    width: 300px;
     padding: 15px;
 }
 }
@@ -234,9 +241,10 @@ body  {
    padding: 50px;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 20%;
+   margin-bottom: 30px;
    width: 1140px;
    opacity: .9;
+   z-index: 999;
 }
 
 .ExternalCardContact h1{
@@ -269,7 +277,13 @@ body  {
 }
 @media screen and (max-width: 576px){
 .ExternalCardContact {
-    width: 500px;
+    width: 370px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 375px){
+.ExternalCardContact {
+    width: 300px;
     padding: 15px;
 }
 }
