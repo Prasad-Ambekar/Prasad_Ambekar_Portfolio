@@ -68,9 +68,7 @@ body  {
    padding: 50px;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 50px;
    width: 1140px;
-   z-index: 999;
    opacity: .9;
 }
  
@@ -241,10 +239,8 @@ body  {
    padding: 50px;
    margin-left: auto;
    margin-right: auto;
-   margin-bottom: 50px;
    width: 1140px;
    opacity: .9;
-   z-index: 999;
 }
 
 .ExternalCardContact h1{
