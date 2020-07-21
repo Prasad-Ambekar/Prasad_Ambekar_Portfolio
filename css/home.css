@@ -154,16 +154,6 @@ div.topnav a:hover:after
   }
 }
 
-@media screen and (max-width: 576px){
-.topnav {
-    width: 370px;
-}
-}
-@media screen and (max-width: 375px){
-.topnav {
-    width: 300px;
-}
-}
 
 .account {
   padding: 10px 40px;
