@@ -66,9 +66,10 @@ body  {
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    padding: 50px;
-   margin-left: 400px;
-   margin-right: 400px;
+   margin-left: auto;
+   margin-right: auto;
    margin-bottom: 20px;
+   width: 1140px;
    opacity: .9;
 }
  
@@ -76,14 +77,34 @@ body  {
    font-size: 2vw;
 }
 
+@media screen and (max-width: 1200px){
+.CardExternal {
+    width: 980px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 992px){
+.CardExternal {
+    width: 760px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 768px){
+.CardExternal {
+    width: 570px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 576px){
+.CardExternal {
+    width: 500px;
+    padding: 15px;
+}
+}
+
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .CardExternal {   
-   margin-top: 10px;
-   margin-left: 20px;
-   margin-right: 20px;
-    padding: 15px;
-  }
 .CardExternal h1{
    font-size: 6vw;
 }
@@ -211,9 +232,10 @@ body  {
    background-color: white;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    padding: 50px;
-   margin-left: 400px;
-   margin-right: 400px;
+   margin-left: auto;
+   margin-right: auto;
    margin-bottom: 20%;
+   width: 1140px;
    opacity: .9;
 }
 
@@ -227,14 +249,33 @@ body  {
   transform: scale(1.02); 
 }
 
+@media screen and (max-width: 1200px){
+.ExternalCardContact {
+    width: 980px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 992px){
+.ExternalCardContact {
+    width: 760px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 768px){
+.ExternalCardContact {
+    width: 570px;
+    padding: 15px;
+}
+}
+@media screen and (max-width: 576px){
+.ExternalCardContact {
+    width: 500px;
+    padding: 15px;
+}
+}
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
-  .ExternalCardContact {   
-   margin-top: 10px;
-   margin-left: 20px;
-   margin-right: 20px;
-    padding: 15px;
-  }
 .ExternalCardContact h1{
    font-size: 5vw;
 }
