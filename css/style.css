@@ -6,18 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Add a gray background color with some padding */
-body  {
-  background-image: url("images/Bg.JPG");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  animation: fadeInAnimation ease 2s; 
-  animation-iteration-count: 1; 
-  animation-fill-mode: forwards; 
-}
-
 /* Add a card effect for articles */
 .CardResume {
    background-color: white;
@@ -257,30 +245,36 @@ body  {
 .ExternalCardContact {
     width: 980px;
     padding: 15px;
+  margin-bottom: 30%;
 }
 }
 @media screen and (max-width: 992px){
 .ExternalCardContact {
     width: 760px;
     padding: 15px;
+  margin-bottom: 50%;
 }
 }
 @media screen and (max-width: 768px){
 .ExternalCardContact {
     width: 570px;
     padding: 15px;
+  margin-bottom: 60%;
 }
 }
 @media screen and (max-width: 576px){
 .ExternalCardContact {
     width: 370px;
     padding: 15px;
+  margin-bottom: 80%;
 }
 }
 @media screen and (max-width: 375px){
 .ExternalCardContact {
     width: 300px;
     padding: 15px;
+  margin-top: 20%;
+  margin-bottom: 90%;
 }
 }
 

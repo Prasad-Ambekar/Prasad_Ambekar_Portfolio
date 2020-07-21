@@ -6,34 +6,68 @@
 }
 
 .loce {
+  padding: 10px;
   animation: showTopText 1s;
   animation-fill-mode: forwards;
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10%;
+  margin-bottom: 20%;
   height: 55vmin;
   transform: translate(0, 100%)
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1200px){
 .loce {
-    margin-top: 20%;
-
+  margin-bottom: 30%;
+}
+}
+@media screen and (max-width: 992px){
+.loce {
+  margin-bottom: 50%;
+}
+}
+@media screen and (max-width: 768px){
+.loce {
+  margin-bottom: 60%;
+}
+}
+@media screen and (max-width: 576px){
+.loce {
+  margin-bottom: 80%;
+}
+}
+@media screen and (max-width: 375px){
+.loce {
+  margin-top: 20%;
+  margin-bottom: 90%;
 }
 }
 
 body, html{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("images/Bg.JPG");
+/*  background-image: url("images/Bg.JPG");
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
+  background-attachment: fixed;  */
+  position: relative;
+/*  background-size: cover;  */
   animation: fadeInAnimation ease 2s; 
   animation-iteration-count: 1; 
   animation-fill-mode: forwards; 
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("images/Bg.JPG") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
 }
 
 * {
