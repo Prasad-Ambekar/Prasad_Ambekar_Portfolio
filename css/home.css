@@ -45,6 +45,7 @@
 }
 }
 
+
 body, html{
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -85,110 +86,6 @@ body::before {
   background-attachment: fixed;
 } */
 
-.topnav {
-  overflow: hidden;
-  background-color: transperents;
-  margin: 0 auto;
-  padding: 30px 20px;
-  text-align:left;
-
-}
-
-.topnav a {
-    font-family: Raleway;
-    color: #FFF;
-    text-decoration: none;
-    font: 30px Raleway;
-    margin: 1px 10px;
-    padding: 10px 10px;
-    position: relative;
-    z-index: 0;
-    cursor: pointer;
-    text-shadow: 2px 2px 4px #000000;
-}
-
-
-div.topnav a:before
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 2px;
-    height: 0px;
-    background: white;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
-}
-
-div.topnav a:after
-{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: none;
-    content: "";
-    opacity: 1;
-    transition: all 0.3s;
-}
-
-div.topnav a:hover:before
-{
-    height: 100%;
-}
-
-div.topnav a:hover:after
-{
-    opacity: 0;
-    top: 100%;
-}
-
-
-.active {
-  background-color: none;
-  color: white;
-}
-
-.topnav .icon {
-    float: right;
-  display: none;
-}
-
-
-@media screen and (max-width: 800px) {
-  .topnav a:not(:first-child){
-    display: none;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .topnav.responsive {
-  padding: 70px 20px; 
-   position: relative;
-}
-  .topnav.responsive .icon {
-    margin-top:30px;
-    margin-right:30px;
-    padding: 10px;
-    font: 30px Raleway;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    font: 20px Raleway;
-    float: none;
-    display: block;
-    text-align: right;
-    text-align: bottom;
-  }
-}
 
 
 .account {
@@ -257,6 +154,111 @@ div.topnav a:hover:after
   z-index: 1;
 }
 
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: none;
+  font-family: 'Sofia', cursive;
+  z-index: 2;
+}
+
+.logo{
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  z-index: 3;
+ }
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.burger{
+ display: none;
+ cursor: pointer;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1200px){
+.nav-links{
+  width: 60%;
+ }
+}
+
+@media screen and (max-width: 768px){
+  body{
+    overflow-x: hidden;
+  }
+  nav:hover{
+    background-color: #212F3C;
+  }
+ .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 50%;
+    top: 7vh;
+    background-color: #212F3C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+ }
+ .nav-links li{
+    opacity: 0;
+  }
+  .burger{
+    display: block;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
 
 
 
