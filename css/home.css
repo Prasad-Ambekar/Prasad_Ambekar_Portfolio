@@ -16,6 +16,7 @@
   margin-bottom: 20%;
   height: 55vmin;
   transform: translate(0, 100%)
+  z-index: 1;
 }
 
 @media screen and (max-width: 1200px){
@@ -156,12 +157,13 @@ body::before {
 
 nav{
   display: flex;
+  margin: 1px;
   justify-content: space-around;
   align-items: center;
   min-height: 8vh;
   background-color: none;
-  font-family: 'Sofia', cursive;
-  z-index: 2;
+  font-family: Raleway;
+  z-index: 3;
 }
 
 .logo{
@@ -181,7 +183,8 @@ nav{
   list-style: none;
 }
 .nav-links a{
-  color: white;
+  color: #FFF;
+  text-shadow: 2px 2px 4px #000000;
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
@@ -212,14 +215,14 @@ nav{
     overflow-x: hidden;
   }
   nav:hover{
-    background-color: #212F3C;
+    background-color: #626567;
   }
  .nav-links{
     position: absolute;
     right: 0px;
-    height: 50%;
-    top: 7vh;
-    background-color: #212F3C;
+    height: 50vh;
+    top: 5vh;
+    background-color: #626567;
     display: flex;
     flex-direction: column;
     align-items: center;
